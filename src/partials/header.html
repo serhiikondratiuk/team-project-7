@@ -1,1 +1,65 @@
-<h2>Hello World!</h2>
+<header class="header">
+  <div class="header__container container">
+    <div class="header__logo">
+      <a href="#" class="logo"
+        ><div class="header__logo-up">Hell EN</div>
+        <div class="header__logo-down">
+          <span class="header__logo-accent">HELLISH</span> english
+        </div></a
+      >
+    </div>
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <!-- Не забыть поставить якоря для заголовков секций -->
+        <li class="header__nav-item">
+          <a href="#studying-program" class="header__nav-link">studying program</a>
+        </li>
+        <li class="header__nav-item"><a href="#about" class="header__nav-link">about</a></li>
+        <li class="header__nav-item">
+          <a href="#training-options" class="header__nav-link">training options</a>
+        </li>
+        <li class="header__nav-item"><a href="#contacts" class="header__nav-link">contacts</a></li>
+      </ul>
+    </nav>
+    <div class="header__buttons-wrapper">
+      <button class="header__consult-button" type="button">consultation by phone</button>
+      <button class="header__burger-button" type="button" data-menu-button>
+        <svg class="header__burger-icon">
+          <use href="#"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="mobile-menu" data-menu>
+      <div class="mobile-menu__container">
+        <div class="mobile-menu__logo">
+          <a href="#" class="logo"
+            ><div class="header__logo-up-mobile">Hell EN</div>
+            <div class="header__logo-down-mobile">
+              <span class="header__logo-accent">HELLISH</span> english
+            </div></a
+          >
+        </div>
+        <button class="mobile-menu__button" type="button" data-menu-close>
+          <svg class="mobile-menu__icon">
+            <use href="#"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu__nav">
+          <!-- Не забыть поставить якоря для заголовков секций -->
+          <li class="mobile-menu__item">
+            <a href="#studying-program" class="mobile-menu__link">Studying program</a>
+          </li>
+          <li class="mobile-menu__item"><a href="#about" class="mobile-menu__link">About</a></li>
+          <li class="mobile-menu__item">
+            <a href="#training-options" class="mobile-menu__link">Training options</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#contacts" class="mobile-menu__link">Contacts</a>
+          </li>
+        </ul>
+        <button class="mobile-menu__consult-button" type="button">consultation by phone</button>
+      </div>
+    </div>
+  </div>
+</header>
