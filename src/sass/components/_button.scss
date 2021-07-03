@@ -11,15 +11,13 @@
 
   cursor: pointer;
 
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding: 14px 0;
 
   &-invert {
     color: var(--primary-accent-color);
     background-color: transparent;
 
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding: 16px 0;
   }
 }
 
@@ -29,12 +27,10 @@
     font-size: 14px;
     line-height: 1.21;
 
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding: 26px 0;
 
     &-invert {
-      padding-top: 26px;
-      padding-bottom: 26px;
+      padding: 26px 0;
     }
   }
 }
