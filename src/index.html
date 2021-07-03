@@ -1,9 +1,15 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Заголовок страницы</title>
+    <title>Group-78</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -12,11 +18,36 @@
     />
   </head>
   <body>
-  <p> test Vlad</p>
-    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    <include src="./partials/example.html"></include>
-<include src="./partials/header.html"></include>
-<include src="./partials/footer.html"></include>
+    <!-- Header -->
+    <include src="./partials/header.html"></include>
+
+    <!-- Main -->
+    <main>
+      <!-- Hero -->
+      <include src="./partials/hero.html"></include>
+      <!-- Advantages -->
+      <include src="./partials/advantages.html"></include>
+      <!-- Problems -->
+      <include src="./partials/problems.html"></include>
+      <!-- Hero -->
+      <include src="./partials/how-we-do.html"></include>
+      <!-- Program -->
+      <include src="./partials/program.html"></include>
+      <!-- Benefits -->
+      <include src="./partials/benefits.html"></include>
+      <!-- About -->
+      <include src="./partials/about.html"></include>
+      <!-- Guarantee -->
+      <include src="./partials/guarantee.html"></include>
+      <!-- Reviews -->
+      <include src="./partials/reviews.html"></include>
+      <!-- Contacts -->
+      <include src="./partials/contacts.html"></include>
+    </main>
+
+    <!-- Footer -->
+    <include src="./partials/footer.html"></include>
+
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
   </body>
