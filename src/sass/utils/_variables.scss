@@ -1,0 +1,21 @@
+:root {
+  // COLORS
+  --primary-text-color: #b9b9b9;
+  --secondary-text-color: #111518;
+  --primary-accent-color: #ff6b09;
+  --primary-background-color: #ffffff;
+  --secondary-background-color: #f1f1f1;
+  --fire-color: #3d3d3d;
+
+  // FONTS
+  --font-main: 'Montserrat', sans-serif;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+  --fw-extra-bold: 800;
+  --letter-spacing: 0.08em;
+
+  // ANIMATIONS
+  --transition-duration: 250ms;
+  --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
