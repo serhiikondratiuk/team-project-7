@@ -1,4 +1,26 @@
 .title {
+  color: var(--secondary-text-color);
+
+  font-weight: var(--fw-extra-bold);
   font-size: 20px;
   line-height: 1.3;
+  letter-spacing: 0.03em;
+
+  &-invert {
+    color: var(--primary-background-color);
+  }
+}
+
+// 768+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 26px;
+  }
+}
+
+// 1366+
+@media screen and (min-width: 1366px) {
+  .title {
+    font-size: 46px;
+  }
 }
