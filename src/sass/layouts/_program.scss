@@ -58,13 +58,15 @@
         padding-left: 0;
     }
   }
-  //&__list::before{
-  //  content:"";
-  //  width: auto;
-  //  height: 1px;
-  //  background-color: red;
-  //  display: flex;
-  //}
+  &__list::after{
+    content:"";
+    display: block;
+    background-image: url("../images/program/program-mobile.png");
+    width: 120px;
+    height: 137px;
+    position: absolute;
+
+  }
 
   &__item{
     border-left: 1px solid white;
@@ -93,8 +95,16 @@
   }
   &__item:last-child{
     border-left: 1px solid transparent;
-  }
 
+  }
+  //&__item:last-of-type::after{
+  //  content:"";
+  //  display: block;
+  //  background-image: url("../images/program/program-mobile.png");
+  //  width: 120px;
+  //  height: 137px;
+  //  position: absolute;
+  //}
 
 
   &__title {
