@@ -4,6 +4,7 @@
   padding: $hamburger-padding-y $hamburger-padding-x;
   display: inline-block;
   cursor: pointer;
+  z-index: 100;
 
   transition-property: opacity, filter;
   transition-duration: 0.15s;
