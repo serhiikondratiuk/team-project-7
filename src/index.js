@@ -1,5 +1,6 @@
 import './sass/main.scss';
 
+  
 (() => {
   const menuBtnRef = document.querySelector("[data-menu-button]");
   const mobileMenuRef = document.querySelector("[data-menu]");
@@ -13,3 +14,5 @@ import './sass/main.scss';
     mobileMenuRef.classList.toggle("is-open");
   });
 })();
+
+ 
