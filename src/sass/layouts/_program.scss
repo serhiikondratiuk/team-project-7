@@ -106,13 +106,7 @@
   @media screen and (min-width: 768px){
     display: flex;
   }
-  &:not(:last-child) {
 
-    //768px
-    @media screen and (min-width: 768px) {
-      margin-right: 50px;
-    }
-  }
   //1366px
 
   &__title {
@@ -131,7 +125,6 @@
       line-height: 33px;
     }
   }
-
 
   &__text {
     color: var(--primary-text-color);
@@ -153,6 +146,14 @@
   &__item{
     margin-bottom: 8px;
     width: 176px;
+
+    &:not(:last-child) {
+
+      //768px
+      @media screen and (min-width: 768px) {
+        margin-right: 50px;
+      }
+    }
   }
 
 }
