@@ -6,6 +6,7 @@
   );
   padding-top: 27px;
   padding-bottom: 50px;
+  // проверить паддинги
 
   @media screen and (min-width: 768px) {
     & {
@@ -15,38 +16,50 @@
         var(--primary-background-color) 69%
       );
       padding-top: 60px;
-
       // перебивает верхний паддинг секции из общих стилей
     }
   }
 }
-// проверить запись градиента и колорстоп
 
 .problems__title {
   font-size: 24px;
-  margin-bottom: 25px;
-}
-// проверить позиционирование с учетом изменений паддингов контейнера
+  margin-bottom: 28px;
 
-.problems .container {
-  padding-left: 40px;
-  padding-right: 40px;
+  @media screen and (min-width: 768px) {
+    & {
+      margin-bottom: 60px;
+      // нижний маржин подобран, в макете сьехал текст
+    }
+  }
 }
-// убрать если будут общие паддинги для контейнеров 40px
 
 .problems__title_accent {
   color: var(--primary-accent-color);
+}
+
+.problems__list-wrapper {
+  background-color: var(--primary-background-color);
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+
+  @media screen and (min-width: 768px) {
+    .problems__list-wrapper {
+      width: 688px;
+    }
+  }
+
+  @media screen and (min-width: 1366px) {
+    .problems__list-wrapper {
+      width: 1314px;
+    }
+  }
 }
 
 .problems__list {
   counter-reset: section;
   list-style-type: none;
   justify-content: space-between;
-  background-color: var(--primary-background-color);
   color: var(--secondary-text-color);
   padding: 49px 14px 4px 30px;
-  margin: 0 auto;
-  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 
   @media screen and (min-width: 480px) {
     & {
@@ -58,9 +71,18 @@
     & {
       display: flex;
       flex-wrap: wrap;
+      margin-top: -30px;
+      margin-left: -30px;
       justify-content: space-between;
       width: 688px;
-      padding: 59px 96px 10px 96px;
+      padding: 39px 96px 10px 96px;
+    }
+  }
+
+  @media screen and (min-width: 1366px) {
+    & {
+      width: 1314px;
+      padding: 70px 114px 62px 114px;
     }
   }
 }
@@ -72,13 +94,25 @@
   line-height: 1.71;
   letter-spacing: 0.08em;
 
-  &:not(:last-child) {
-    margin-bottom: 30px;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 
   @media screen and (min-width: 768px) {
     & {
-      flex-basis: calc((100% - 90px) / 2);
+      flex-basis: calc((100% - 2 * 30px) / 2);
+      margin-top: 30px;
+      margin-left: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1366px) {
+    & {
+      flex-basis: calc((100% - 3 * 30px) / 3);
+      margin-top: 30px;
+      margin-left: 30px;
     }
   }
 }
@@ -88,7 +122,7 @@
   top: -29px;
   left: 29px;
   counter-increment: section;
-  content: counters(section, '.') ' ';
+  content: '0' counters(section, '.') ' ';
   color: var(--primary-accent-color);
 }
 
