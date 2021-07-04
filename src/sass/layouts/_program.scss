@@ -23,7 +23,7 @@
     @media screen and (min-width: 1366px){
       font-size: 46px;
       line-height: 60px;
-      padding-left: 184px;
+
     }
   }
 
@@ -32,15 +32,25 @@
     margin: 0 auto;
     width: 174px;
 
+    //768px
     @media screen and (min-width: 768px){
       //margin-left: 97px;
       width: 100%;
-      padding-left: 57px;
+      padding-left: 57px;}
 
+      //1366px
+      @media screen and (min-width: 1366px){
+        display: flex;
+        padding-left: 0;
     }
   }
   &__item{
     border-left: 1px solid white;
+
+    //1366px
+    @media screen and (min-width: 1366px){
+      width: 240px;
+    }
   }
   &__item:first-of-type h3{
     line-height: 0;
@@ -108,6 +118,9 @@
   }
 
   //1366px
+  @media screen and (min-width: 1366px){
+    flex-direction: column;
+  }
 
   &__title {
     color: var(--primary-accent-color);
@@ -139,8 +152,8 @@
 
     //1366px
     @media screen and (min-width: 1366px){
-      font-size: 12px;
-      line-height: 20px;
+      font-size: 18px;
+      line-height: 28px;
     }
   }
   &__item{
@@ -152,6 +165,10 @@
       //768px
       @media screen and (min-width: 768px) {
         margin-right: 50px;
+      }
+      //1366px
+      @media screen and (min-width: 1366px){
+        margin-right: 30px;
       }
     }
   }
