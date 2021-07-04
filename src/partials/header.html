@@ -27,15 +27,20 @@
     </nav>
     <div class="header__buttons-wrapper">
       <button class="header__consult-button" type="button">consultation by phone</button>
-      <button class="hamburger hamburger--collapse" type="button" data-menu-button>
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
+      <button class="header__burger-button" type="button" data-menu-button>
+        <svg class="header__burger-icon">
+          <use href="./images/svg/sprite.svg#icon-burger"></use>
+        </svg>
       </button>
     </div>
 
     <div class="mobile-menu" data-menu>
       <div class="mobile-menu__container container">
+        <button class="mobile-menu__button" type="button" data-menu-close>
+          <svg class="mobile-menu__icon">
+            <use href="./images/svg/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
         <div class="mobile-menu__logo">
           <a href="#" class="logo"
             ><div class="header__logo-up-mobile">
@@ -48,15 +53,7 @@
             </div></a
           >
         </div>
-        <!-- <button
-          class="hamburger hamburger--collapse is-active mobile-menu__button"
-          type="button"
-          data-menu-close
-        >
-          <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-          </span>
-        </button> -->
+
         <div class="mobile-menu__thumb">
           <ul class="mobile-menu__nav">
             <!-- Не забыть поставить якоря для заголовков секций -->
