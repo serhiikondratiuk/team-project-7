@@ -1,0 +1,103 @@
+.problems {
+  background-image: linear-gradient(
+    to bottom,
+    var(--secondary-text-color) 78%,
+    var(--primary-background-color) 78%
+  );
+  padding-top: 27px;
+  padding-bottom: 50px;
+
+  @media screen and (min-width: 768px) {
+    & {
+      background-image: linear-gradient(
+        to bottom,
+        var(--secondary-text-color) 69%,
+        var(--primary-background-color) 69%
+      );
+      padding-top: 60px;
+
+      // перебивает верхний паддинг секции из общих стилей
+    }
+  }
+}
+// проверить запись градиента и колорстоп
+
+.problems__title {
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+// проверить позиционирование с учетом изменений паддингов контейнера
+
+.problems .container {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+// убрать если будут общие паддинги для контейнеров 40px
+
+.problems__title_accent {
+  color: var(--primary-accent-color);
+}
+
+.problems__list {
+  counter-reset: section;
+  list-style-type: none;
+  justify-content: space-between;
+  background-color: var(--primary-background-color);
+  color: var(--secondary-text-color);
+  padding: 49px 14px 4px 30px;
+  margin: 0 auto;
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+
+  @media screen and (min-width: 480px) {
+    & {
+      width: 440px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    & {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 688px;
+      padding: 59px 96px 10px 96px;
+    }
+  }
+}
+
+.problems__item {
+  position: relative;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.08em;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    & {
+      flex-basis: calc((100% - 90px) / 2);
+    }
+  }
+}
+
+.problems__item::before {
+  position: absolute;
+  top: -29px;
+  left: 29px;
+  counter-increment: section;
+  content: counters(section, '.') ' ';
+  color: var(--primary-accent-color);
+}
+
+.problems__item::after {
+  position: absolute;
+  top: -18px;
+  content: '';
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: var(--primary-accent-color);
+}
