@@ -137,7 +137,7 @@
   margin-right: auto;
   height: 48px;
   background-color: transparent;
-  border: 1px solid var(--primary-background-color);
+  outline: 1px solid var(--primary-background-color);
   font-weight: var(--fw-semi-bold);
   font-size: 20px;
   line-height: 1.2;
@@ -162,16 +162,19 @@
   }
 }
 
+.request__input:hover,
 .request__input:focus {
-  border: var(--primary-accent-color);
+  border-color: var(--primary-accent-color);
 }
 
+.request__input:required:hover:not(:placeholder-shown):valid,
 .request__input:required:focus:not(:placeholder-shown):valid {
-  border: green;
+  border-color: green;
 }
 
+.request__input:required:hover:not(:placeholder-shown):invalid,
 .request__input:required:focus:not(:placeholder-shown):invalid {
-  border: red;
+  border-color: red;
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
