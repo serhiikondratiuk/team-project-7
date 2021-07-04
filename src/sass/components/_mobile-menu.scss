@@ -35,18 +35,22 @@
 
   .mobile-menu__button {
     position: absolute;
-    top: 30px;
-    right: 33px;
+    top: 34px;
+    right: 37px;
 
     border: none;
     background-color: transparent;
     padding: 0;
     line-height: 0;
+
+    @media screen and (max-width: 767px) {
+      top: 28px;
+    }
   }
 
   .mobile-menu__icon {
-    width: 15px;
-    height: 15px;
+    width: 21px;
+    height: 21px;
     fill: #fff;
   }
 
