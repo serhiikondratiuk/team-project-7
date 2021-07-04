@@ -3,6 +3,7 @@
    .header__nav {
        display: none;
    }
+ 
 }
 
     .header__container {
@@ -14,6 +15,8 @@
 
   .header {
       &__logo-up {
+        display: flex;
+        align-items: center;
         margin-bottom: 4px;
 
         font-weight: 800;
@@ -21,6 +24,10 @@
         line-height: 1.3;
         letter-spacing: 0.03em;
         color: var(--secondary-text-color);
+
+        @media screen and (min-width: 768px) {
+            font-size: 26px;
+        }
       }
 
       &__logo-down {
@@ -31,6 +38,10 @@
         letter-spacing: 0.18em;
         text-transform: uppercase;
         color: var(--secondary-text-color);
+
+        @media screen and (min-width: 768px) {
+            font-size: 8px;
+        }
       }
 
       &__logo-accent {
@@ -38,19 +49,30 @@
       }
   }
 
-  .header {
-      &__burger-button {
-        background-color: red;
-        border: none;
-        padding: 0;
-        line-height: 0;  
-      }
+    .logo__icon {
+        width: 14px;
+        height: 19px;
 
-      &__burger-icon {
-          width: 21px;
-          height: 12px;
+         @media screen and (min-width: 768px) {
+          width: 22px;
+          height: 30px;      
       }
-}
+    }
+
+//   .header {
+//       &__burger-button {
+//         background-color: transparent;
+//         border: none;
+//         padding: 0;
+//         line-height: 0;  
+//       }
+
+//       &__burger-icon {
+//           width: 21px;
+//           height: 12px;
+//           fill: var(--secondary-text-color);
+//       }
+// }
 
 
 @media screen and (min-width: 768px) {
@@ -113,3 +135,4 @@
     }
 }
 }
+
