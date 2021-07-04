@@ -1,8 +1,8 @@
 .problems {
   background-image: linear-gradient(
     to bottom,
-    var(--secondary-text-color) 545px,
-    var(--secondary-background-color) 545px
+    var(--secondary-text-color) 78%,
+    var(--primary-background-color) 78%
   );
   padding-top: 27px;
   padding-bottom: 50px;
@@ -11,23 +11,28 @@
     & {
       background-image: linear-gradient(
         to bottom,
-        var(--secondary-text-color) 340px,
-        var(--secondary-background-color) 340px
+        var(--secondary-text-color) 69%,
+        var(--primary-background-color) 69%
       );
       padding-top: 60px;
-      padding-left: 20px;
-      padding-right: 20px;
+
       // перебивает верхний паддинг секции из общих стилей
     }
   }
 }
 // проверить запись градиента и колорстоп
 
-@media screen and (max-width: 340px) {
-  .problems__title_wrapped-mobile {
-    display: block;
-  }
+.problems__title {
+  font-size: 24px;
+  margin-bottom: 25px;
 }
+// проверить позиционирование с учетом изменений паддингов контейнера
+
+.problems .container {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+// убрать если будут общие паддинги для контейнеров 40px
 
 .problems__title_accent {
   color: var(--primary-accent-color);
@@ -36,14 +41,12 @@
 .problems__list {
   counter-reset: section;
   list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  height: 488px;
   justify-content: space-between;
   background-color: var(--primary-background-color);
   color: var(--secondary-text-color);
-  padding: 49px 13px 4px 30px;
-  margin-top: 25px;
+  padding: 49px 14px 4px 30px;
+  margin: 0 auto;
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 
   @media screen and (min-width: 480px) {
     & {
@@ -53,11 +56,11 @@
 
   @media screen and (min-width: 768px) {
     & {
-      flex-direction: row;
+      display: flex;
       flex-wrap: wrap;
-      height: 303px;
+      justify-content: space-between;
       width: 688px;
-      padding: 59px 47px 10px 96px;
+      padding: 59px 96px 10px 96px;
     }
   }
 }
@@ -69,11 +72,13 @@
   line-height: 1.71;
   letter-spacing: 0.08em;
 
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
   @media screen and (min-width: 768px) {
     & {
-      width: 225px;
-      height: 56px;
-      // ширина по самому широкому li из макета
+      flex-basis: calc((100% - 90px) / 2);
     }
   }
 }
