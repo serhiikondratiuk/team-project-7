@@ -8,16 +8,40 @@
   line-height: 1.25;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  white-space: nowrap;
 
   cursor: pointer;
 
-  padding: 14px 0;
+  padding: 14px 12px;
 
   &-invert {
     color: var(--primary-accent-color);
     background-color: transparent;
 
-    padding: 16px 0;
+    padding: 16px 18px;
+  }
+}
+
+// 480+
+@media screen and (min-width: 480px) {
+  .btn {
+    width: 260px;
+    padding: 14px 0;
+
+    &-invert {
+      padding: 17px 35px 16px 36px;
+    }
+  }
+}
+
+// 768+
+@media screen and (min-width: 768px) {
+  .btn {
+    padding: 17px 46px 16px 46px;
+
+    &-invert {
+      padding: 15px 5px 16px 5px;
+    }
   }
 }
 
@@ -27,10 +51,12 @@
     font-size: 14px;
     line-height: 1.21;
 
-    padding: 26px 0;
+    padding: 27px 70px 26px 70px;
+    width: 354px;
 
     &-invert {
-      padding: 26px 0;
+      padding: 27px 23px 26px 23px;
+      width: 336px;
     }
   }
 }
