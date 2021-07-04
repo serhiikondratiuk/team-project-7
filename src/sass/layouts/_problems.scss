@@ -1,0 +1,98 @@
+.problems {
+  background-image: linear-gradient(
+    to bottom,
+    var(--secondary-text-color) 545px,
+    var(--secondary-background-color) 545px
+  );
+  padding-top: 27px;
+  padding-bottom: 50px;
+
+  @media screen and (min-width: 768px) {
+    & {
+      background-image: linear-gradient(
+        to bottom,
+        var(--secondary-text-color) 340px,
+        var(--secondary-background-color) 340px
+      );
+      padding-top: 60px;
+      padding-left: 20px;
+      padding-right: 20px;
+      // перебивает верхний паддинг секции из общих стилей
+    }
+  }
+}
+// проверить запись градиента и колорстоп
+
+@media screen and (max-width: 340px) {
+  .problems__title_wrapped-mobile {
+    display: block;
+  }
+}
+
+.problems__title_accent {
+  color: var(--primary-accent-color);
+}
+
+.problems__list {
+  counter-reset: section;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  height: 488px;
+  justify-content: space-between;
+  background-color: var(--primary-background-color);
+  color: var(--secondary-text-color);
+  padding: 49px 13px 4px 30px;
+  margin-top: 25px;
+
+  @media screen and (min-width: 480px) {
+    & {
+      width: 440px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    & {
+      flex-direction: row;
+      flex-wrap: wrap;
+      height: 303px;
+      width: 688px;
+      padding: 59px 47px 10px 96px;
+    }
+  }
+}
+
+.problems__item {
+  position: relative;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.08em;
+
+  @media screen and (min-width: 768px) {
+    & {
+      width: 225px;
+      height: 56px;
+      // ширина по самому широкому li из макета
+    }
+  }
+}
+
+.problems__item::before {
+  position: absolute;
+  top: -29px;
+  left: 29px;
+  counter-increment: section;
+  content: counters(section, '.') ' ';
+  color: var(--primary-accent-color);
+}
+
+.problems__item::after {
+  position: absolute;
+  top: -18px;
+  content: '';
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: var(--primary-accent-color);
+}
