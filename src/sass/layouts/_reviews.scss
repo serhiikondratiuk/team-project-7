@@ -1,0 +1,221 @@
+.reviews {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.reviews__title {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.reviews__wrapper {
+  @media screen and (min-width: 768px) {
+    & {
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+      margin-bottom: 30px;
+
+      &::before {
+        content: url('../images/svg/all-svg/arrow-l.svg');
+        position: absolute;
+        top: 50%;
+        left: -15px;
+      }
+
+      &::after {
+        content: url('../images/svg/all-svg/arrow-r.svg');
+        position: absolute;
+        top: 50%;
+        right: -15px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1366px) {
+    & {
+      width: 1090px;
+      margin: 0 auto;
+      margin-bottom: 40px;
+      justify-content: start;
+      padding-left: 82px;
+      padding-right: 82px;
+    }
+
+    &::before {
+      left: -75px;
+    }
+
+    &::after {
+      right: -75px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .reviews__foto-social-wrapper {
+    margin-right: 46px;
+  }
+
+  .reviews__text-wrapper {
+    width: 412px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .reviews__foto-social-wrapper {
+    margin-right: 40px;
+  }
+
+  .reviews__text-wrapper {
+    width: 706px;
+  }
+}
+
+.review__main-foto {
+  margin: 0 auto;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+  }
+}
+
+.reviews__social {
+  width: 30px;
+  height: 30px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  fill: #436eab;
+  //   добавить цвет в переменные
+}
+
+.reviews__name {
+  font-weight: var(--fw-extra-bold);
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: var(--letter-spacing);
+  color: var(--primary-accent-color);
+  text-align: center;
+  margin-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    text-align: start;
+    font-size: 20px;
+  }
+}
+
+.reviews__education {
+  font-weight: var(--fw-medium);
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: var(--letter-spacing);
+  color: var(--primary-text-color);
+  text-align: center;
+
+  margin-bottom: 16px;
+
+  @media screen and (max-width: 767px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
+
+  @media screen and (min-width: 1366px) {
+    width: 430px;
+  }
+}
+
+.reviews__article {
+  font-weight: var(--fw-medium);
+  font-size: 12px;
+  line-height: 1.67;
+  letter-spacing: normal;
+  color: var(--fire-color);
+  text-align: center;
+
+  @media screen and (max-width: 767px) {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 62px;
+  }
+
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
+
+  @media screen and (min-width: 1366px) {
+    & {
+      font-size: 18px;
+      line-height: 1.56;
+    }
+  }
+}
+.reviews__read-more {
+  font-weight: var(--fw-medium);
+  font-size: 12px;
+  line-height: 1.67;
+  color: var(--primary-accent-color);
+  text-decoration-line: underline;
+
+  @media screen and (min-width: 1366px) {
+    & {
+      font-size: 18px;
+      line-height: 1.56;
+    }
+  }
+}
+
+.reviews__arrows {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+}
+
+.reviews__fotos-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media screen and (max-width: 767px) {
+    &::before {
+      content: url('../images/svg/all-svg/arrow-l.svg');
+    }
+
+    &::after {
+      content: url('../images/svg/all-svg/arrow-r.svg');
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+}
+
+.reviews__fotos-item {
+  display: inline-block;
+
+  &:nth-child(-n + 2) {
+    margin-right: 10px;
+  }
+
+  @media screen and (max-width: 767px) {
+    &:not(:nth-child(-n + 3)) {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
