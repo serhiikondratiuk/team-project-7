@@ -46,9 +46,14 @@
       From the first lesson I realized that I was on my plate. Elena and I became friends because
       she was really worried about my success. She became an authority for me, but I did not tremble
       in class, fearing to make the slightest mistake. Now I can brag that I'm student ...
-      <a class="reviews__read-more" href="#">Read more</a>
-      <span class="reviews__hidden"
-        >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, ut.</span
+      <div id="contentSpoiler" style="display: none">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo amet exercitationem
+          dolorum, praesentium beatae eum a temporibus nam deleniti sequi!
+        </p>
+      </div>
+      <a a href="javascript:Spoiler();" class="link_spoiler reviews__read-more" id="linkSpoiler"
+        >Read more</a
       >
     </article>
     <ul class="reviews__fotos-list">
@@ -85,3 +90,17 @@
     </ul>
   </div>
 </section>
+
+<script>
+  function Spoiler() {
+    var ele = document.getElementById('contentSpoiler');
+    var text = document.getElementById('linkSpoiler');
+    if (ele.style.display == 'block') {
+      ele.style.display = 'none';
+      text.innerHTML = 'Подробнее';
+    } else {
+      ele.style.display = 'block';
+      text.innerHTML = 'Скрыть';
+    }
+  }
+</script>
