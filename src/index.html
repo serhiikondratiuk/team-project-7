@@ -59,9 +59,11 @@
           text.innerHTML = 'Read more';
         } else {
           ele.style.display = 'block';
-          text.innerHTML = 'Скрыть';
+          text.innerHTML = 'hide';
         }
       }
+      ele.addEventListener('click', Spoiler);
+      text.addEventListener('click', Spoiler);
     </script>
   </body>
 </html>
