@@ -1,0 +1,102 @@
+.hero {
+  padding-top: 50px;
+  padding-bottom: 44px;
+  background-image: url(../images/hero/hero-bcgr-mobile-new.png);
+  background-repeat: no-repeat;
+  background-position: bottom 0 left 0;
+  background-size: cover;
+  box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+  background-color: var(--primary-background-color);
+}
+// @media screen and (min-device-pixel-ratio: 2),
+//   screen and (min-resolution: 192dpi),
+//   screen and (min-resolution: 2dppx) {
+//   .hero {
+//     background-image: url(../images/hero/hero-bcgr-mobile@2x.png);
+//   }
+// }
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url(../images/hero/hero-bcgr-tablet-new.png);
+  }
+}
+// @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+//   screen and (min-width: 768px) and (min-resolution: 192dpi),
+//   screen and (min-width: 768px) and (min-resolution: 2dppx) {
+//   .hero {
+//     background-image: url(../images/hero/hero-bcgr-tablet-new.png);
+//   }
+// }
+@media screen and (min-width: 1366px) {
+  .hero {
+    background-image: url(../images/hero/hero-bcgr-desktop.png);
+  }
+}
+.hero__title {
+  height: 80px;
+  margin-bottom: 30px;
+}
+.hero__content-first-slogan {
+  font-family: Montserrat;
+  font-weight: var(--fw-medium);
+  font-size: 14px;
+  line-height: 1.57;
+  align-items: center;
+  letter-spacing: var(--letter-spacing);
+  color: var(--primary-text-color);
+}
+.hero__content-second-slogan {
+  font-weight: var(--fw-bold);
+  font-size: 14px;
+  line-height: 1.57;
+  align-items: center;
+  letter-spacing: var(--letter-spacing);
+  color: var(--secondary-text-color);
+  margin-bottom: 52px;
+}
+.hero__content-slogan-accent-part {
+  color: var(--primary-accent-color);
+}
+.hero__btn {
+  display: block;
+  margin: 0 auto;
+  width: 260px;
+}
+.hero__image {
+  margin: 0 auto;
+  margin-top: 30px;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 70px;
+    padding-bottom: 45px;
+  }
+  .hero__container {
+    display: flex;
+  }
+  .hero__content {
+    width: 332px;
+  }
+  .hero__title {
+    height: 132px;
+  }
+
+  .hero__btn {
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .hero__title {
+    height: 305px;
+    margin-bottom: 24px;
+  }
+  .hero__content {
+    width: 601px;
+  }
+  .hero__content-first-slogan {
+    font-size: 20px;
+  }
+  .hero__content-second-slogan {
+    font-size: 20px;
+  }
+}
