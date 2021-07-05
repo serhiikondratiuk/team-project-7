@@ -1,7 +1,5 @@
 .teacher {
 
-		// .teacher__title
-
 		&__title {
             margin-bottom: 20px;
 
@@ -13,25 +11,11 @@
             }
 		}
 
-		// .teacher__image-container
-
 		&__image-container {
             @media screen and (max-width: 767px) {
                 margin-bottom: 20px;
             }
 		}
-
-		// .teacher__foto
-
-		&__foto {
-		}
-
-		// .teacher__description-container
-
-		&__description-container {
-		}
-
-		// .teacher__name
 
 		&__name {
             margin-bottom: 30px;
@@ -62,12 +46,6 @@
                 width: 700px;
             }
         }
-    	// .teacher__list
-
-		&__list {
-		}
-
-		// .teacher__item
 
 		&__item {
             position: relative;
@@ -128,8 +106,6 @@
 
 .teacher-certificate {
 
-		// .teacher-certificate__link
-
 		&__link {
             margin-top: 10px;
             
@@ -147,6 +123,7 @@
             }
 		}
 }
+
 @media screen and (min-width: 768px) {
 
     .container__content-wrapper {
