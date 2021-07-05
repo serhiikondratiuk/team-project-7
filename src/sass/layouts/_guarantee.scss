@@ -4,31 +4,124 @@
   line-height: 1.67;
   letter-spacing: 0.03em;
 
-  color: #3d3d3d;
-  background: linear-gradient(#ffffff 12%, #f1f1f1 12%, #f1f1f1 88%);
+  color: var(--fire-color);
+
+  &__section {
+    padding-top: 25px;
+  }
 
   &__title {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   }
+
   &__acent-color {
     color: var(--primary-accent-color);
   }
 
-  &__list {
-    padding-top: 34px;
-    padding-bottom: 34px;
-    padding-left: 8px;
-  }
-
   &__item {
-    padding-left: 28px;
+    position: relative;
   }
 
   &__item:not(:last-child) {
     padding-bottom: 34px;
 
     // margin-bottom: 35px;
-    border-left: 1px dashed #b9b9b9;
+    border-left: 1px dashed var(--primary-text-color);
+  }
+
+  &__item::before {
+    display: block;
+    position: absolute;
+    left: -6px;
+    content: '';
+    width: 14px;
+    height: 20px;
+    background-image: url('../images/svg/all-svg/fire.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+// 0 - 767
+@media screen and (max-width: 767px) {
+  .guarantee {
+    background: linear-gradient(
+      var(--primary-background-color) 14%,
+      var(--secondary-background-color) 14%
+    );
+
+    &__section {
+      padding-bottom: 36px;
+    }
+
+    &__list {
+      padding-left: 8px;
+    }
+
+    &__item {
+      padding-left: 28px;
+    }
+  }
+}
+
+// 768 - 1365
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .guarantee {
+    background: linear-gradient(
+      var(--primary-background-color) 20%,
+      var(--secondary-background-color) 20%
+    );
+
+    &__section {
+      padding-bottom: 22px;
+    }
+
+    &__list {
+      padding-left: 86px;
+      padding-right: 50px;
+    }
+
+    &__item {
+      padding-left: 32px;
+    }
+  }
+}
+
+// 1366+
+@media screen and (min-width: 1366px) {
+  .guarantee {
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+
+    background: linear-gradient(
+      var(--primary-background-color) 28%,
+      var(--secondary-background-color) 28%
+    );
+
+    &__section {
+      padding-top: 70px;
+      padding-bottom: 52px;
+    }
+
+    &__title {
+      margin-bottom: 104px;
+    }
+
+    &__list {
+      padding-left: 96px;
+      padding-right: 114px;
+    }
+
+    &__item {
+      padding-left: 42px;
+    }
+
+    &__item::before {
+      left: -9px;
+      width: 22px;
+      height: 30px;
+    }
   }
 }
