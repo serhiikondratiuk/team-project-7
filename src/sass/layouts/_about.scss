@@ -1,7 +1,5 @@
 .teacher {
 
-		// .teacher__title
-
 		&__title {
             margin-bottom: 20px;
 
@@ -13,25 +11,11 @@
             }
 		}
 
-		// .teacher__image-container
-
 		&__image-container {
             @media screen and (max-width: 767px) {
                 margin-bottom: 20px;
             }
 		}
-
-		// .teacher__foto
-
-		&__foto {
-		}
-
-		// .teacher__description-container
-
-		&__description-container {
-		}
-
-		// .teacher__name
 
 		&__name {
             margin-bottom: 30px;
@@ -63,18 +47,12 @@
             }
         }
 
-
-		// .teacher__list
-
-		&__list {
-		}
-
-		// .teacher__item
-
 		&__item {
+            position: relative;
             display: flex;
             align-items: center;
             margin-bottom: 20px;
+            margin-left: 35px;
             color: var(--secondary-text-color);
 
             font-weight: var(--fw-semi-bold);
@@ -88,6 +66,8 @@
 		}
 
         &__item::before {
+            position: absolute;
+            left: -35px;
             content: "";
             display: block;
             width: 24px;
@@ -100,6 +80,8 @@
         }
 
         &__item:last-child::before{
+            position: absolute;
+            left: -35px;
             content: '';
             display: block;
             width: 20px;
@@ -124,8 +106,6 @@
 
 .teacher-certificate {
 
-		// .teacher-certificate__link
-
 		&__link {
             margin-top: 10px;
             
@@ -143,6 +123,7 @@
             }
 		}
 }
+
 @media screen and (min-width: 768px) {
 
     .container__content-wrapper {
