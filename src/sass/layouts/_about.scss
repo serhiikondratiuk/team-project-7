@@ -62,9 +62,7 @@
                 width: 700px;
             }
         }
-
-
-		// .teacher__list
+    	// .teacher__list
 
 		&__list {
 		}
@@ -72,9 +70,11 @@
 		// .teacher__item
 
 		&__item {
+            position: relative;
             display: flex;
             align-items: center;
             margin-bottom: 20px;
+            margin-left: 35px;
             color: var(--secondary-text-color);
 
             font-weight: var(--fw-semi-bold);
@@ -88,6 +88,8 @@
 		}
 
         &__item::before {
+            position: absolute;
+            left: -35px;
             content: "";
             display: block;
             width: 24px;
@@ -100,6 +102,8 @@
         }
 
         &__item:last-child::before{
+            position: absolute;
+            left: -35px;
             content: '';
             display: block;
             width: 20px;
