@@ -27,11 +27,16 @@
 
   .mobile-menu__thumb {
  
-  display: block;
-  justify-content: center;
+    display: block;
+    justify-content: center;
 
-  animation: animateX100 2000ms var(--transition-timing-function);
-    }
+    animation: animateX100 2000ms var(--transition-timing-function);
+
+    @media screen and (min-width: 768px) {
+      max-width: 332px;
+      margin: 0 auto;
+  }
+  }
 
   .mobile-menu__button {
     position: absolute;
@@ -115,9 +120,10 @@
 
   .mobile-menu__consult-button {
     display: block;
-    width: 264px;
+    width: 260px;
     height: 48px;
     margin: 0 auto;
+    padding: 0;
 
     font-weight: bold;
     font-size: 14px;
@@ -128,6 +134,10 @@
     color: var(--primary-accent-color);
     background-color: transparent;
     border: 2px solid var(--primary-accent-color);
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
     }
 }
 
