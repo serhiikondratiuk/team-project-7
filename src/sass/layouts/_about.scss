@@ -47,6 +47,12 @@
             }
         }
 
+        &__list {
+            @media screen and (min-width: 1366px) {
+                width: 565px;
+            }
+        }
+
 		&__item {
             position: relative;
             display: flex;
@@ -62,12 +68,14 @@
 
             @media screen and (min-width: 1366px) {
             margin-bottom: 25px;
+            font-size: 16px;
             }
 		}
 
         &__item::before {
             position: absolute;
             left: -35px;
+            top: 0;
             content: "";
             display: block;
             width: 24px;
@@ -82,16 +90,13 @@
         &__item:last-child::before{
             position: absolute;
             left: -35px;
+            top: 0;
             content: '';
             display: block;
             width: 20px;
             height: 2px;
             margin-right: 8px;
             background-color: var(--primary-accent-color);
-        }
-
-        &__item:last-child {
-            margin-bottom: 0;
         }
 
         &__text {
@@ -102,6 +107,16 @@
             line-height: 2.1;
             letter-spacing: 0.01em;
 		}
+        @media screen and (min-width: 1366px) {
+            &__text {
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 15px;
+            }
+            &__text:last-child {
+                margin-bottom: 0;
+            }
+        }
 }
 
 .teacher-certificate {
@@ -135,6 +150,11 @@
     }
 }
 
+@media screen and (min-width: 768px) {
+    img.teacher__foto {
+        max-width: 100vw;
+    }
+}
 
 // ===== Модальное окно открытия сертификата =====
 // .modal {
