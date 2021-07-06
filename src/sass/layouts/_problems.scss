@@ -1,11 +1,11 @@
 .problems {
   background-image: linear-gradient(
     to bottom,
-    var(--secondary-text-color) 78%,
-    var(--primary-background-color) 78%
+    var(--secondary-text-color) 79%,
+    var(--primary-background-color) 79%
   );
-  padding-top: 27px;
-  padding-bottom: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   // проверить паддинги
 
   @media screen and (min-width: 768px) {
@@ -16,13 +16,18 @@
         var(--primary-background-color) 69%
       );
       padding-top: 60px;
-      // перебивает верхний паддинг секции из общих стилей
+    }
+  }
+
+  @media screen and (min-width: 1366px) {
+    & {
+      padding-top: 100px;
     }
   }
 }
 
 .problems__title {
-  margin-bottom: 28px;
+  margin-bottom: 25px;
 
   @media screen and (min-width: 768px) {
     & {
@@ -34,6 +39,12 @@
   @media screen and (max-width: 1365px) {
     & {
       font-size: 24px;
+    }
+  }
+
+  @media screen and (min-width: 1366px) {
+    & {
+      margin-bottom: 110px;
     }
   }
 }
@@ -63,7 +74,7 @@
   counter-reset: section;
   list-style-type: none;
   color: var(--secondary-text-color);
-  padding: 50px 25px 4px 30px;
+  padding: 48px 14px 19px 30px;
 
   @media screen and (min-width: 480px) {
     & {
@@ -75,11 +86,11 @@
     & {
       display: flex;
       flex-wrap: wrap;
-      margin-top: -30px;
-      margin-left: -30px;
+      margin-top: -40px;
+      margin-left: -40px;
       justify-content: space-between;
       width: 688px;
-      padding: 39px 96px 10px 96px;
+      padding: 26px 47px 30px 96px;
     }
   }
 
@@ -95,20 +106,20 @@
   position: relative;
   font-weight: bold;
   font-size: 14px;
-  line-height: 2;
+  line-height: 1.43;
   letter-spacing: 0.08em;
 
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
-      margin-bottom: 30px;
+      margin-bottom: 44px;
     }
   }
 
   @media screen and (min-width: 768px) {
     & {
-      flex-basis: calc((100% - 2 * 30px) / 2);
-      margin-top: 30px;
-      margin-left: 30px;
+      flex-basis: calc((100% - 2 * 40px) / 2);
+      margin-top: 40px;
+      margin-left: 40px;
     }
   }
 
@@ -131,17 +142,30 @@
   position: absolute;
   top: -29px;
   left: 29px;
+  line-height: normal;
   counter-increment: section;
   content: '0' counters(section, '.') ' ';
   color: var(--primary-accent-color);
+
+  @media screen and (min-width: 1366px) {
+    & {
+      top: -34px;
+    }
+  }
 }
 
 .problems__item::after {
   position: absolute;
-  top: -18px;
+  top: -21px;
   content: '';
   display: block;
   width: 20px;
   height: 2px;
   background-color: var(--primary-accent-color);
+
+  @media screen and (min-width: 1366px) {
+    & {
+      top: -24px;
+    }
+  }
 }

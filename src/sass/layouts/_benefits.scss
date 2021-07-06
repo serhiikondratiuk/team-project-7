@@ -79,7 +79,7 @@
   counter-reset: section;
   list-style-type: none;
   color: var(--secondary-text-color);
-  padding: 50px 14px 4px 30px;
+  padding: 53px 14px 20px 30px;
 
   @media screen and (min-width: 480px) {
     & {
@@ -95,14 +95,14 @@
       margin-left: -30px;
       justify-content: space-between;
       width: 688px;
-      padding: 39px 96px 10px 96px;
+      padding: 39px 96px 40px 96px;
     }
   }
 
   @media screen and (min-width: 1366px) {
     & {
       width: 1314px;
-      padding: 70px 84px 70px 82px;
+      padding: 70px 82px 70px 82px;
       margin-top: -40px;
       margin-left: -40px;
     }
@@ -118,7 +118,7 @@
 
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
-      margin-bottom: 50px;
+      margin-bottom: 69px;
     }
   }
 
@@ -151,7 +151,7 @@
 
 .benefits__item::before {
   position: absolute;
-  top: -39px;
+  top: -33px;
   left: 29px;
   counter-increment: section;
   content: '0' counters(section, '.') ' ';
@@ -160,7 +160,7 @@
 
 .benefits__item::after {
   position: absolute;
-  top: -28px;
+  top: -23px;
   content: '';
   display: block;
   width: 20px;
