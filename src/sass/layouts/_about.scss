@@ -57,8 +57,8 @@
             position: relative;
             display: flex;
             align-items: center;
-            margin-bottom: 20px;
-            margin-left: 35px;
+            padding-bottom: 20px;
+            padding-left: 35px;
             color: var(--secondary-text-color);
 
             font-weight: var(--fw-semi-bold);
@@ -74,7 +74,7 @@
 
         &__item::before {
             position: absolute;
-            left: -35px;
+            left: 0;
             top: 0;
             content: "";
             display: block;
@@ -89,7 +89,7 @@
 
         &__item:last-child::before{
             position: absolute;
-            left: -35px;
+            left: 0;
             top: 0;
             content: '';
             display: block;
