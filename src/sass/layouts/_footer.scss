@@ -21,11 +21,33 @@
   }
 
   &__link {
+    display: flex;
+    align-items: center;
     color: var(--third-background-color);
   }
 
   &__icon {
     margin-right: 10px;
+    width: 20px;
+    height: 20px;
+
+    @media screen and (min-width: 768px) {
+      width: 24px;
+      height: 23px;
+  }
+
+    @media screen and (min-width: 1366px) {
+      width: 30px;
+      height: 29px;
+    }
+}
+
+  &__instagram-wrapper {
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/footer/instagram.png);
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   &__copyright {
@@ -117,7 +139,6 @@
     }
 
     &__logo {
-      width: 128px;
       margin-right: 290px;
     }
   }
