@@ -50,20 +50,6 @@
 
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
-    <script>
-      function Spoiler() {
-        var ele = document.getElementById('contentSpoiler');
-        var text = document.getElementById('linkSpoiler');
-        if (ele.style.display == 'block') {
-          ele.style.display = 'none';
-          text.innerHTML = 'Read more';
-        } else {
-          ele.style.display = 'block';
-          text.innerHTML = 'Hide';
-        }
-      }
-      ele.addEventListener('click', Spoiler);
-      text.addEventListener('click', Spoiler);
-    </script>
+    <script src="./spoiler.js"></script>
   </body>
 </html>
