@@ -42,6 +42,7 @@
     letter-spacing: 0.03em;
     margin-bottom: 43px;
 
+
     //768px
     @media screen and (min-width: 768px) {
       font-size: 26px;
@@ -59,14 +60,16 @@
   }
 
   &__list {
-    margin: 0 auto;
     width: 174px;
+    margin-left: 75px;
+    margin-right: auto;
 
     //768px
     @media screen and (min-width: 768px) {
       //margin-left: 97px;
       width: 100%;
       padding-left: 57px;
+      margin: 0 auto;
     }
 
     //1366px
