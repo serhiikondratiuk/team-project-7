@@ -106,12 +106,20 @@
         background-color: transparent;
         border: 2px solid var(--primary-accent-color);
 
+        transition: color 250ms var(--transition-timing-function);
+        transition: border 250ms var(--transition-timing-function);
+
         @media screen and (min-width: 1366px) {
 
             margin-right: 0;
             width: 336px;
             height: 70px;
         }
+    }
+    .header__consult-button:hover,
+    .header__consult-button:focus {
+        color: #eb6208;
+        border: 2px solid #eb6208;
     }
 }
 
