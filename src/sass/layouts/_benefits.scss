@@ -4,14 +4,16 @@
     var(--secondary-text-color) 68%,
     var(--primary-background-color) 68%
   );
+  padding-top: 0;
 
   @media screen and (min-width: 768px) {
     & {
       background-image: linear-gradient(
         to bottom,
-        var(--secondary-text-color) 45%,
-        var(--primary-background-color) 45%
+        var(--secondary-text-color) 50%,
+        var(--primary-background-color) 50%
       );
+      padding-top: 87px;
     }
   }
 
