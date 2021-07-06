@@ -152,9 +152,15 @@
     display: flex;
   }
 
-  .teacher__image-container {
-    margin-right: 40px;
-  }
+
+    .teacher__content-wrapper {
+        display: flex;
+    }
+    
+    .teacher__image-container {
+        margin-right: 40px;
+    }
+
 }
 
 @media screen and (min-width: 768px) {
