@@ -1,6 +1,11 @@
 .reviews {
   padding-top: 50px;
   padding-bottom: 50px;
+
+  @media screen and(min-width:1366px) {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
 }
 
 .reviews__title {
@@ -222,4 +227,7 @@
       margin-right: 30px;
     }
   }
+}
+.facebook-link {
+  display: block;
 }

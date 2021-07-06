@@ -6,6 +6,10 @@
 
   color: var(--fire-color);
 
+  @media screen and(min-width:1366px) {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
   &__section {
     padding-top: 25px;
   }
