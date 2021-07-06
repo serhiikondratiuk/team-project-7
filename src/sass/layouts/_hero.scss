@@ -27,11 +27,7 @@
 //     background-image: url(../images/hero/hero-bcgr-tablet-new.png);
 //   }
 // }
-@media screen and (min-width: 1366px) {
-  .hero {
-    background-image: url(../images/hero/hero-bcgr-desktop.png);
-  }
-}
+
 .hero__title {
   margin-bottom: 8px;
 }
@@ -76,6 +72,7 @@
   }
   .hero__container {
     display: flex;
+    justify-content: space-between;
   }
   .hero__content {
     width: 332px;
@@ -106,8 +103,14 @@
     font-size: 20px;
   }
   .hero__picture {
-    margin-right: -129px;
     margin-top: -53px;
+  }
+  @media screen and (min-width: 1366px) {
+    .hero {
+      background-image: url(../images/hero/hero-bcgr-desktop.png);
+      padding-top: 50px;
+      padding-bottom: 20px;
+    }
   }
   // .hero__picture {
   //   position: absolute;

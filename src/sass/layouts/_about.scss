@@ -1,145 +1,157 @@
+.about {
+  @media screen and(min-width:1366px) {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+}
 .teacher {
+  @media screen and(min-width:1366px) {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
 
-		&__title {
-            margin-bottom: 20px;
+  &__title {
+    margin-bottom: 20px;
 
-            @media screen and (min-width: 768px) {
-                margin-bottom: 30px;
-            }
-             @media screen and (min-width: 1366px) {
-                margin-bottom: 50px;
-            }
-		}
+    @media screen and (min-width: 768px) {
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1366px) {
+      margin-bottom: 50px;
+    }
+  }
 
-		&__image-container {
-            @media screen and (max-width: 767px) {
-                margin-bottom: 20px;
-            }
-		}
+  &__image-container {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+    }
+  }
 
-		&__name {
-            margin-bottom: 30px;
-            color: var(--secondary-text-color);
+  &__name {
+    margin-bottom: 30px;
+    color: var(--secondary-text-color);
 
-            font-weight: var(--fw-extra-bold);
-            font-size: 20px;
-            line-height: 1.2;
-            letter-spacing: 0.08em;
+    font-weight: var(--fw-extra-bold);
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.08em;
 
-            @media screen and (min-width: 1366px) {
-            margin-bottom: 45px;
-            font-size: 30px;
-            }
-		}
-        &__name::after{
-            content: '';
-            display: block;
-            width: 280px;
-            height: 1px;
-            margin-top: 10px;
-            background-color: var(--primary-text-color);
+    @media screen and (min-width: 1366px) {
+      margin-bottom: 45px;
+      font-size: 30px;
+    }
+  }
+  &__name::after {
+    content: '';
+    display: block;
+    width: 280px;
+    height: 1px;
+    margin-top: 10px;
+    background-color: var(--primary-text-color);
 
-            @media screen and (min-width: 768px) {
-                width: 401px;
-            }
-             @media screen and (min-width: 1366px) {
-                width: 700px;
-            }
-        }
+    @media screen and (min-width: 768px) {
+      width: 401px;
+    }
+    @media screen and (min-width: 1366px) {
+      width: 700px;
+    }
+  }
 
-        &__list {
-            @media screen and (min-width: 1366px) {
-                width: 565px;
-            }
-        }
+  &__list {
+    @media screen and (min-width: 1366px) {
+      width: 565px;
+    }
+  }
 
-		&__item {
-            position: relative;
-            display: flex;
-            align-items: center;
-            padding-bottom: 20px;
-            padding-left: 35px;
-            color: var(--secondary-text-color);
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-left: 35px;
+    color: var(--secondary-text-color);
 
-            font-weight: var(--fw-semi-bold);
-            font-size: 14px;
-            line-height: 1.2;
-            letter-spacing: 0.06em;
+    font-weight: var(--fw-semi-bold);
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.06em;
 
-            @media screen and (min-width: 1366px) {
-            margin-bottom: 25px;
-            font-size: 16px;
-            }
-		}
+    @media screen and (min-width: 1366px) {
+      margin-bottom: 25px;
+      font-size: 16px;
+    }
+  }
 
-        &__item::before {
-            position: absolute;
-            left: 0;
-            top: 0;
-            content: "";
-            display: block;
-            width: 24px;
-            height: 24px;
-            margin-right: 9px;
-            margin-bottom: 10px;
-            background-image: url("../images/svg/all-svg/check.svg");
-            background-repeat: no-repeat;
-            background-size: contain;
-        }
+  &__item::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-right: 9px;
+    margin-bottom: 10px;
+    background-image: url('../images/svg/all-svg/check.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 
-        &__item:last-child::before{
-            position: absolute;
-            left: 0;
-            top: 0;
-            content: '';
-            display: block;
-            width: 20px;
-            height: 2px;
-            margin-right: 8px;
-            background-color: var(--primary-accent-color);
-        }
+  &__item:last-child::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    margin-right: 8px;
+    background-color: var(--primary-accent-color);
+  }
 
-        &__text {
-            color: var(--primary-text-color);
+  &__text {
+    color: var(--primary-text-color);
 
-            font-weight: var(--fw-medium);
-            font-size: 12px;
-            line-height: 2.1;
-            letter-spacing: 0.01em;
-		}
-        @media screen and (min-width: 1366px) {
-            &__text {
-            font-size: 18px;
-            line-height: 1.5;
-            margin-bottom: 15px;
-            }
-            &__text:last-child {
-                margin-bottom: 0;
-            }
-        }
+    font-weight: var(--fw-medium);
+    font-size: 12px;
+    line-height: 2.1;
+    letter-spacing: 0.01em;
+  }
+  @media screen and (min-width: 1366px) {
+    &__text {
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 15px;
+    }
+    &__text:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .teacher-certificate {
+  &__link {
+    margin-top: 10px;
 
-		&__link {
-            margin-top: 10px;
-            
+    font-weight: var(--fw-medium);
+    font-size: 12px;
+    line-height: 1.67;
+    letter-spacing: 0.01em;
+    text-decoration-line: underline;
+    color: var(--primary-accent-color);
 
-            font-weight: var(--fw-medium);
-            font-size: 12px;
-            line-height: 1.67;
-            letter-spacing: 0.01em;
-            text-decoration-line: underline;
-            color: var(--primary-accent-color);
-
-            @media screen and (min-width: 1366px) {
-            font-size: 18px;
-            line-height: 1.56;
-            }
-		}
+    @media screen and (min-width: 1366px) {
+      font-size: 18px;
+      line-height: 1.56;
+    }
+  }
 }
 
 @media screen and (min-width: 768px) {
+  .container__content-wrapper {
+    display: flex;
+  }
+
 
     .teacher__content-wrapper {
         display: flex;
@@ -148,12 +160,13 @@
     .teacher__image-container {
         margin-right: 40px;
     }
+
 }
 
 @media screen and (min-width: 768px) {
-    img.teacher__foto {
-        max-width: 100vw;
-    }
+  img.teacher__foto {
+    max-width: 100vw;
+  }
 }
 
 // ===== Модальное окно открытия сертификата =====
@@ -205,4 +218,3 @@
 //     fill: var(--primary-accent-color);
 //   }
 // }
-
