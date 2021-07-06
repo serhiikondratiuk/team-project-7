@@ -3,12 +3,6 @@
     padding-top: 65px;
     padding-bottom: 65px;
   }
-}
-.teacher {
-  @media screen and(min-width:1366px) {
-    padding-top: 65px;
-    padding-bottom: 65px;
-  }
 
   &__title {
     margin-bottom: 20px;
@@ -35,6 +29,7 @@
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.08em;
+
 
     @media screen and (min-width: 1366px) {
       margin-bottom: 45px;
@@ -129,22 +124,25 @@
   }
 }
 
-.teacher-certificate {
-  &__link {
-    margin-top: 10px;
+.about-certificate {
 
-    font-weight: var(--fw-medium);
-    font-size: 12px;
-    line-height: 1.67;
-    letter-spacing: 0.01em;
-    text-decoration-line: underline;
-    color: var(--primary-accent-color);
+		&__link {
+            margin-top: 10px;
+            
 
-    @media screen and (min-width: 1366px) {
-      font-size: 18px;
-      line-height: 1.56;
-    }
-  }
+            font-weight: var(--fw-medium);
+            font-size: 12px;
+            line-height: 1.67;
+            letter-spacing: 0.01em;
+            text-decoration-line: underline;
+            color: var(--primary-accent-color);
+
+            @media screen and (min-width: 1366px) {
+            font-size: 18px;
+            line-height: 1.56;
+            }
+		}
+
 }
 
 @media screen and (min-width: 768px) {
@@ -153,20 +151,21 @@
   }
 
 
-    .teacher__content-wrapper {
+    .about__content-wrapper {
         display: flex;
     }
     
-    .teacher__image-container {
+    .about__image-container {
         margin-right: 40px;
     }
 
 }
 
 @media screen and (min-width: 768px) {
-  img.teacher__foto {
-    max-width: 100vw;
-  }
+    img.about__foto {
+        max-width: 100vw;
+    }
+
 }
 
 // ===== Модальное окно открытия сертификата =====
