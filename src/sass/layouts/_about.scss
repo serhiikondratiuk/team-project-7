@@ -1,4 +1,4 @@
-.teacher {
+.about {
 
 		&__title {
             margin-bottom: 20px;
@@ -119,7 +119,7 @@
         }
 }
 
-.teacher-certificate {
+.about-certificate {
 
 		&__link {
             margin-top: 10px;
@@ -141,17 +141,17 @@
 
 @media screen and (min-width: 768px) {
 
-    .teacher__content-wrapper {
+    .about__content-wrapper {
         display: flex;
     }
     
-    .teacher__image-container {
+    .about__image-container {
         margin-right: 40px;
     }
 }
 
 @media screen and (min-width: 768px) {
-    img.teacher__foto {
+    img.about__foto {
         max-width: 100vw;
     }
 }
