@@ -248,7 +248,7 @@
   }
   &__item {
     margin-bottom: 8px;
-    width: 176px;
+    width: 156px;
 
     &:not(:last-child) {
       //768px
@@ -260,6 +260,9 @@
         margin-right: 30px;
         width: 240px;
       }
+    }
+    &:first-child {
+      width: 176px;
     }
   }
 }
