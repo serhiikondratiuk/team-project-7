@@ -1,30 +1,31 @@
 .advantages {
-  padding-top: 30px;
+  //   padding-top: 30px;
   padding-bottom: 44px;
   box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
   background-color: var(--primary-background-color);
 }
 
 .advantages__list-text {
-  width: 145px;
+  width: 140px;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.64;
   letter-spacing: var(--letter-spacing);
   color: var(--secondary-text-color);
+  position: relative;
 }
 @media screen and (max-width: 767px) {
   .advantages__list-item:not(:last-child) {
     margin-bottom: 24px;
   }
   .advantages__list {
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 125px;
+    // padding-left: 32px;
+    // padding-right: 32px;
   }
 }
 
 .advantages__list-item {
-  //   position: relative;
   display: flex;
   align-items: center;
 }
@@ -32,29 +33,47 @@
   content: '';
   display: inline-block;
   vertical-align: middle;
-  width: 61px;
-  height: 63px;
+  width: 59px;
+  height: 60px;
   background-image: url('../images/svg/all-svg/women.svg');
+  background-size: cover;
   margin-right: 14px;
+  position: absolute;
+  left: 73px;
 }
+// .advantages__list-text-program::before {
+//   content: '';
+//   display: inline-block;
+//   vertical-align: middle;
+//   width: 61px;
+//   height: 63px;
+//   background-image: url('../images/svg/all-svg/women.svg');
+//   margin-right: 14px;
+// }
 
 .advantages__list-text-method::before {
   content: '';
   display: inline-block;
   vertical-align: middle;
-  width: 61px;
-  height: 63px;
+  width: 59px;
+  height: 60px;
   background-image: url('../images/svg/all-svg/mobile.svg');
+  background-size: cover;
   margin-right: 14px;
+  position: absolute;
+  left: 73px;
 }
 .advantages__list-text-guarantee::before {
   content: '';
   display: inline-block;
   vertical-align: middle;
-  width: 61px;
-  height: 63px;
+  width: 59px;
+  height: 60px;
   background-image: url('../images/svg/all-svg/umbrella.svg');
+  background-size: cover;
   margin-right: 14px;
+  position: absolute;
+  left: 73px;
 }
 
 @media screen and (min-width: 768px) {
@@ -90,7 +109,7 @@
     flex-basis: calc((100% - 3 * 5px) / 3);
   }
   .advantages__list-text {
-    width: 352px;
+    width: 348px;
     font-size: 20px;
   }
 }
