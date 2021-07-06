@@ -46,17 +46,18 @@
 
   .mobile-menu__button {
     position: absolute;
-    top: 34px;
-    right: 37px;
+    top: 37px;
+    right: 27px;
 
     border: none;
     background-color: transparent;
     padding: 0;
     line-height: 0;
 
-    @media screen and (max-width: 767px) {
-      top: 28px;
-    }
+  @media screen and (min-width: 768px) {
+    top: 54px;
+    right: 47px;
+  }
   }
 
   .mobile-menu__icon {
