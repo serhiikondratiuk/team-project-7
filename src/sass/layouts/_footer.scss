@@ -38,11 +38,6 @@
     background-size: contain;
   }
 
-  &__instagram-wrapper:hover {
-    background-image: linear-gradient(to right, rgba(231, 135, 79, 0.589), rgba(230, 133, 69, 0.4)),
-    url('../images/footer/instagram.png')
-  }
-
   &__copyright {
     font-weight: var(--fw-medium);
     font-size: 14px;
