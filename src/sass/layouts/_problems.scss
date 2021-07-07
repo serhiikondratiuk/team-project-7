@@ -138,31 +138,15 @@
 .problems__item::before {
   position: absolute;
   top: -29px;
-  left: 29px;
+  left: 0;
   line-height: normal;
   counter-increment: section;
-  content: '0' counters(section, '.') ' ';
+  content: '\2014  0'counters(section, '.') ' ';
   color: var(--primary-accent-color);
 
   @media screen and (min-width: 1366px) {
     & {
       top: -34px;
-    }
-  }
-}
-
-.problems__item::after {
-  position: absolute;
-  top: -21px;
-  content: '';
-  display: block;
-  width: 20px;
-  height: 2px;
-  background-color: var(--primary-accent-color);
-
-  @media screen and (min-width: 1366px) {
-    & {
-      top: -24px;
     }
   }
 }
