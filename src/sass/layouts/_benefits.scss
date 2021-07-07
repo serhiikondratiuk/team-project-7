@@ -145,18 +145,8 @@
 .benefits__item::before {
   position: absolute;
   top: -33px;
-  left: 29px;
+  left: 0;
   counter-increment: section;
-  content: '0' counters(section, '.') ' ';
+  content: '\2014  0'counters(section, '.') ' ';
   color: var(--primary-accent-color);
-}
-
-.benefits__item::after {
-  position: absolute;
-  top: -23px;
-  content: '';
-  display: block;
-  width: 20px;
-  height: 2px;
-  background-color: var(--primary-accent-color);
 }
