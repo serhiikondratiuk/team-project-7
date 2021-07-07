@@ -31,7 +31,6 @@
     & {
       text-align: center;
       margin-bottom: 60px;
-      // нижний маржин подобран, в макете сьехал текст
     }
   }
 
@@ -50,7 +49,6 @@
       margin: -1px;
       border: 0;
       padding: 0;
-
       white-space: nowrap;
       clip-path: inset(100%);
       clip: rect(0 0 0 0);
@@ -94,20 +92,16 @@
     & {
       display: flex;
       flex-wrap: wrap;
-      margin-top: -30px;
-      margin-left: -30px;
       justify-content: space-between;
       width: 688px;
-      padding: 39px 96px 40px 96px;
+      padding: 68px 96px 40px 96px;
     }
   }
 
   @media screen and (min-width: 1366px) {
     & {
       width: 1314px;
-      padding: 70px 82px 70px 82px;
-      margin-top: -40px;
-      margin-left: -40px;
+      padding: 113px 82px 70px 82px;
     }
   }
 }
@@ -121,33 +115,29 @@
 
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
-      margin-bottom: 69px;
+      margin-bottom: 70px;
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1365px) {
     & {
       flex-basis: calc((100% - 2 * 30px) / 2);
-      margin-top: 30px;
-      margin-left: 30px;
       line-height: 28px;
     }
-    &:not(:nth-last-child(-n + 2)) {
-      margin-bottom: 30px;
+    &:nth-child(-n + 4) {
+      margin-bottom: 70px;
     }
   }
 
   @media screen and (min-width: 1366px) {
     & {
       flex-basis: calc((100% - 3 * 40px) / 3);
-      margin-top: 40px;
-      margin-left: 40px;
       font-size: 20px;
       line-height: 1.4;
     }
 
     &:nth-child(-n + 3) {
-      margin-bottom: 30px;
+      margin-bottom: 75px;
     }
   }
 }

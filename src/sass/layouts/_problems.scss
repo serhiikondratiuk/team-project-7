@@ -6,7 +6,6 @@
   );
   padding-top: 25px;
   padding-bottom: 25px;
-  // проверить паддинги
 
   @media screen and (min-width: 768px) {
     & {
@@ -32,8 +31,7 @@
 
   @media screen and (min-width: 768px) {
     & {
-      margin-bottom: 60px;
-      // нижний маржин подобран, в макете сьехал текст
+      margin-bottom: 35px;
     }
   }
 
@@ -45,7 +43,7 @@
 
   @media screen and (min-width: 1366px) {
     & {
-      margin-bottom: 110px;
+      margin-bottom: 70px;
     }
   }
 }
@@ -87,18 +85,16 @@
     & {
       display: flex;
       flex-wrap: wrap;
-      margin-top: -40px;
-      margin-left: -40px;
       justify-content: space-between;
       width: 688px;
-      padding: 26px 47px 30px 96px;
+      padding: 55px 96px 30px 96px;
     }
   }
 
   @media screen and (min-width: 1366px) {
     & {
       width: 1314px;
-      padding: 70px 114px 62px 114px;
+      padding: 113px 114px 62px 114px;
     }
   }
 }
@@ -116,25 +112,25 @@
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1365px) {
     & {
       flex-basis: calc((100% - 2 * 40px) / 2);
-      margin-top: 40px;
-      margin-left: 40px;
+    }
+
+    &:nth-child(-n + 4) {
+      margin-bottom: 44px;
     }
   }
 
   @media screen and (min-width: 1366px) {
     & {
       flex-basis: calc((100% - 3 * 30px) / 3);
-      margin-top: 30px;
-      margin-left: 30px;
       font-size: 20px;
       line-height: 1.4;
     }
 
     &:nth-child(-n + 3) {
-      margin-bottom: 30px;
+      margin-bottom: 75px;
     }
   }
 }
