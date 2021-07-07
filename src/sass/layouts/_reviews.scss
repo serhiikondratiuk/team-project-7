@@ -96,8 +96,7 @@
   display: block;
   margin: 0 auto;
   margin-bottom: 24px;
-  fill: #436eab;
-  //   добавить цвет в переменные
+  fill: var(--social-icon-color);
 }
 
 .reviews__name {
@@ -228,6 +227,7 @@
     }
   }
 }
+
 .facebook-link {
   display: block;
 }
