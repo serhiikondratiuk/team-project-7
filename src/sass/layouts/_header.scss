@@ -21,16 +21,20 @@
   align-items: center;
 }
 
-.logo {
-transform: scale(1);
-
-    transition: transform var(--time250ms) linear;
-
-    &:hover,
-    &:focus {
-      transform: scale(1.2);
-    }
+.animate__pulse {
+  animation-duration: 2500ms;
+  animation-iteration-count: infinite;
 }
+// .logo {
+// transform: scale(1);
+
+//     transition: transform var(--time250ms) linear;
+
+//     &:hover,
+//     &:focus {
+//       transform: scale(1.2);
+//     }
+// }
 
   .header {
 
