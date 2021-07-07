@@ -160,12 +160,10 @@
 
 .request__input:required:focus:not(:placeholder-shown):valid {
   border-color: green;
-  // outline: green;
 }
 
 .request__input:required:focus:not(:placeholder-shown):invalid {
   border-color: red;
-  // outline: red;
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
