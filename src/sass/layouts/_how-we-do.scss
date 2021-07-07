@@ -55,10 +55,13 @@
   &__link {
     display: block;
     height: 100%;
-    transition: background-color var(--transition-duration) var(--transition-timing-function);
+    transform: scale(1);
+    transition: transform var(--transition-duration) var(--transition-timing-function),
+      background-color var(--transition-duration) var(--transition-timing-function);
     &:hover,
     &:focus {
       background-color: var(--primary-accent-color);
+      transform: scale(1.03);
     }
   }
   // ICON
