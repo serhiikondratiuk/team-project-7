@@ -22,6 +22,14 @@
     & {
       padding-top: 100px;
       padding-bottom: 65px;
+      background-image: url('../images/problems/problems-desktop.svg'),
+        linear-gradient(
+          to bottom,
+          var(--secondary-text-color) 69%,
+          var(--primary-background-color) 69%
+        );
+      background-repeat: no-repeat;
+      background-position: top 27% right 0, top 0 right 0;
     }
   }
 }
