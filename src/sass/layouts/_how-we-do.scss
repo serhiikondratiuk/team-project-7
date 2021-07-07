@@ -66,6 +66,7 @@
     fill: var(--primary-accent-color);
     transition: fill var(--transition-duration) var(--transition-timing-function),
       background-color var(--transition-duration) var(--transition-timing-function);
+
     .how-we-do__link:hover &,
     .how-we-do__link:focus & {
       fill: var(--primary-background-color);
@@ -79,6 +80,7 @@
     color: var(--secondary-text-color);
     margin-bottom: 30px;
     transition: color var(--transition-timing-function) var(--transition-duration);
+
     .how-we-do__link:hover &,
     .how-we-do__link:focus & {
       color: var(--primary-background-color);
