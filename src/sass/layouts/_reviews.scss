@@ -61,22 +61,21 @@
   }
 }
 
-@media screen and (min-width: 768px) {
-  .reviews__foto-social-wrapper {
+.reviews__foto-social-wrapper {
+  @media screen and (min-width: 768px) {
     margin-right: 46px;
   }
-
-  .reviews__text-wrapper {
-    width: 412px;
+  @media screen and (min-width: 1366px) {
+    margin-right: 40px;
   }
 }
 
-@media screen and (min-width: 1366px) {
-  .reviews__foto-social-wrapper {
-    margin-right: 40px;
+.reviews__text-wrapper {
+  @media screen and (min-width: 768px) {
+    width: 412px;
   }
 
-  .reviews__text-wrapper {
+  @media screen and (min-width: 1366px) {
     width: 706px;
   }
 }
