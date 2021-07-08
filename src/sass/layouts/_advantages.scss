@@ -5,7 +5,7 @@
     padding-top: 100px;
     padding-bottom: 130px;
   }
-  // list
+
   &__list {
     display: flex;
     align-items: center;
@@ -17,7 +17,7 @@
       justify-content: space-between;
     }
   }
-  // item
+  
   &__item {
     position: relative;
     padding-left: 72px;
@@ -62,7 +62,6 @@
 .advantages__item--program::before {
   background-image: url(../images/svg/all-svg/women.svg);
 }
-
 .advantages__item--method::before {
   background-image: url(../images/svg/all-svg/mobile.svg);
 }

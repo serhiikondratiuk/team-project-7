@@ -159,11 +159,11 @@
 }
 
 .request__input:required:focus:not(:placeholder-shown):valid {
-  border-color: green;
+  border-color: #008000;
 }
 
 .request__input:required:focus:not(:placeholder-shown):invalid {
-  border-color: red;
+  border-color: #ff0000;
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
