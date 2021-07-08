@@ -28,6 +28,7 @@
 
     @media screen and (max-width: 767px) {
       max-width: 280px;
+      height: 280px;
       margin: 0 auto;
     }
     @media screen and(max-width:767px) {
@@ -43,7 +44,7 @@
       }
     }
     @media screen and(min-width:1366px) {
-      max-height: 396px;
+      height: 396px;
       flex-basis: calc((100% - 60px) / 3);
       &:nth-child(4) .how-we-do__text-wrapper {
         padding: 0 85px;
