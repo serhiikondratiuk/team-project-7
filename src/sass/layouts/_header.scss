@@ -169,8 +169,17 @@
     background-repeat: no-repeat;
     background-size: 15px;
     background-position-y: 37%;
+    border: 1px solid;
+    border-radius: 50%;
     color: var(--primary-accent-color);
     cursor: pointer;
     padding: 15px;
     font-size: 14px;
+
+    @media screen and (min-width: 768px) {
+ 
+      background-size: 20px;
+      padding: 19px;
+      font-size: 22px;
+    }
 }
