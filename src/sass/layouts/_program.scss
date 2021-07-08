@@ -26,6 +26,7 @@
       top: 277px;
     }
   }
+
   &__pad {
     //1366px
     @media screen and (min-width: 1366px) {
@@ -77,6 +78,7 @@
       padding-left: 0;
     }
   }
+
   &__list::after {
     content: '';
     display: block;
@@ -122,32 +124,28 @@
       padding-left: 0;
     }
   }
+
   &__item:first-of-type h3 {
     line-height: 0;
     @media screen and (min-width: 1366px) {
       line-height: 28px;
     }
   }
+
   &__item:first-of-type ul {
     padding-top: 6px;
   }
+
   &__item:last-of-type h3 {
     line-height: 0;
     @media screen and (min-width: 1366px) {
       line-height: 28px;
     }
   }
+
   &__item:last-child {
     border-left: 1px solid transparent;
   }
-  //&__item:last-of-type::after{
-  //  content:"";
-  //  display: block;
-  //  background-image: url("../images/program/program-mobile.png");
-  //  width: 120px;
-  //  height: 137px;
-  //  position: absolute;
-  //}
 
   &__title {
     color: var(--third-text-color);
@@ -166,7 +164,7 @@
     //1366px
     @media screen and (min-width: 1366px) {
       font-size: 20px;
-      margin-bottom: 10px;
+      margin-bottom: 25px;
     }
   }
 
@@ -229,6 +227,7 @@
     @media screen and (min-width: 1366px) {
       font-size: 20px;
       line-height: 33px;
+      margin-bottom: 10px;
     }
   }
 
@@ -248,6 +247,7 @@
       line-height: 28px;
     }
   }
+
   &__item {
     margin-bottom: 8px;
     width: 156px;
@@ -256,15 +256,19 @@
       //768px
       @media screen and (min-width: 768px) {
         margin-right: 50px;
+        margin-bottom: 0;
       }
       //1366px
       @media screen and (min-width: 1366px) {
         margin-right: 0;
-        width: 240px;
+        margin-bottom: 25px;
       }
     }
-    &:first-child {
-      width: 176px;
+
+    //1366px
+    @media screen and (min-width: 1366px) {
+      width: 240px;
+      margin-bottom: 25px;
     }
   }
 }
