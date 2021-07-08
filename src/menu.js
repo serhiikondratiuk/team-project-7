@@ -7,6 +7,7 @@
   const mobiles4BtnClose = document.querySelector("[data-menu-close4]");
   const mobiles5BtnClose = document.querySelector("[data-menu-close5]");
   const mobiles6BtnClose = document.querySelector("[data-menu-close6]");
+  const mobiles7BtnClose = document.querySelector("[data-menu-close7]");
   
   menuBtnRef.addEventListener("click", () => {
     mobileMenuRef.classList.toggle("is-open");
@@ -33,6 +34,10 @@ mobiles5BtnClose.addEventListener("click", () => {
   });
 
   mobiles6BtnClose.addEventListener("click", () => {
+    mobileMenuRef.classList.toggle("is-open");
+  });
+
+    mobiles7BtnClose.addEventListener("click", () => {
     mobileMenuRef.classList.toggle("is-open");
   });
 
