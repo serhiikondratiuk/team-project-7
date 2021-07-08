@@ -38,7 +38,6 @@
     line-height: 1.2;
     letter-spacing: 0.08em;
 
-
     @media screen and (min-width: 1366px) {
       margin-bottom: 45px;
       font-size: 30px;
@@ -125,17 +124,17 @@
 
 .about-certificate {
 		&__link {
-            font-weight: var(--fw-medium);
-            font-size: 12px;
-            line-height: 1.67;
-            letter-spacing: 0.01em;
-            text-decoration-line: underline;
-            color: var(--primary-accent-color);
+      font-weight: var(--fw-medium);
+      font-size: 12px;
+      line-height: 1.67;
+      letter-spacing: 0.01em;
+      text-decoration-line: underline;
+      color: var(--primary-accent-color);
 
-            @media screen and (min-width: 1366px) {
-            font-size: 18px;
-            line-height: 1.56;
-            }
+      @media screen and (min-width: 1366px) {
+      font-size: 18px;
+      line-height: 1.56;
+      }
 		}
 }
 
@@ -144,12 +143,11 @@
     display: flex;
   }
 
-    .about__content-wrapper {
-        display: flex;
-    }
-    
-    .about__image-container {
-        margin-right: 40px;
-    }
-
+  .about__content-wrapper {
+      display: flex;
+  }
+  
+  .about__image-container {
+      margin-right: 40px;
+  }
 }
