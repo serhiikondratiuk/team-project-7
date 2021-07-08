@@ -7,30 +7,41 @@
   background-size: cover;
   box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
   background-color: var(--primary-background-color);
-}
-// @media screen and (min-device-pixel-ratio: 2),
-//   screen and (min-resolution: 192dpi),
-//   screen and (min-resolution: 2dppx) {
-//   .hero {
-//     background-image: url(../images/hero/hero-bcgr-mobile@2x.png);
-//   }
-// }
-@media screen and (min-width: 768px) {
-  .hero {
-    background-image: url(../images/hero/hero-bcgr-tablet.png);
+
+  @media screen and (min-width: 768px) {
+    & {
+      padding-top: 70px;
+      padding-bottom: 45px;
+      background-image: url(../images/hero/hero-bcgr-tablet.png);
+    }
+  }
+
+  @media screen and (min-width: 1366px) {
+    & {
+      padding-top: 50px;
+      padding-bottom: 20px;
+      background-image: url(../images/hero/hero-bcgr-desktop.png);
+    }
   }
 }
-// @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
-//   screen and (min-width: 768px) and (min-resolution: 192dpi),
-//   screen and (min-width: 768px) and (min-resolution: 2dppx) {
-//   .hero {
-//     background-image: url(../images/hero/hero-bcgr-tablet-new.png);
-//   }
-// }
+
+.hero__container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 
 .hero__title {
   margin-bottom: 8px;
+
+  @media screen and (min-width: 1366px) {
+    & {
+      font-size: 58px;
+    }
+  }
 }
+
 .hero__content-first-slogan {
   font-family: Montserrat;
   font-weight: var(--fw-medium);
@@ -39,7 +50,14 @@
   align-items: center;
   letter-spacing: var(--letter-spacing);
   color: var(--primary-text-color);
+
+  @media screen and (min-width: 1366px) {
+    & {
+      font-size: 20px;
+    }
+  }
 }
+
 .hero__content-second-slogan {
   font-weight: var(--fw-bold);
   font-size: 14px;
@@ -48,76 +66,78 @@
   letter-spacing: var(--letter-spacing);
   color: var(--secondary-text-color);
   margin-bottom: 52px;
+
+  @media screen and (min-width: 768px) and (max-width: 1365px) {
+    & {
+      width: 287px;
+    }
+  }
+
+  @media screen and (min-width: 1366px) {
+    & {
+      font-size: 20px;
+    }
+  }
 }
+
 .hero__content-slogan-accent-part {
   color: var(--primary-accent-color);
 }
+
 .hero__btn {
   display: block;
-  margin: 0 auto;
+
+  @media screen and (max-width: 479px) {
+    & {
+      width: fit-content;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    & {
+      padding-right: 45px;
+      padding-left: 45px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    & {
+      margin: 0 auto;
+    }
+  }
 }
+
+.hero__content {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 55px;
+  }
+
+  @media screen and (min-width: 768px) {
+    & {
+      width: 332px;
+    }
+  }
+
+  @media screen and (min-width: 1366px) {
+    & {
+      width: 601px;
+    }
+  }
+}
+
+.hero__picture {
+  @media screen and (min-width: 768px) {
+    margin-right: -30px;
+  }
+
+  @media screen and (min-width: 1366px) {
+    & {
+      margin-top: -53px;
+    }
+  }
+}
+
 .hero__image {
   width: 100%;
   margin: 0 auto;
-}
-@media screen and (max-width: 767px) {
-  .hero__content {
-    margin-bottom: 55px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .hero {
-    padding-top: 70px;
-    padding-bottom: 45px;
-  }
-  .hero__container {
-    display: flex;
-    justify-content: space-between;
-  }
-  .hero__content {
-    width: 332px;
-  }
-  .hero__btn {
-    margin-left: 0;
-  }
-  .hero__picture {
-    margin-right: -30px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1365px) {
-  .hero__content-second-slogan {
-    width: 287px;
-  }
-}
-@media screen and (min-width: 1366px) {
-  .hero__title {
-    margin-bottom: 24px;
-  }
-  .hero__content {
-    width: 601px;
-  }
-  .hero__content-first-slogan {
-    font-size: 20px;
-  }
-  .hero__content-second-slogan {
-    font-size: 20px;
-  }
-  .hero__picture {
-    margin-top: -53px;
-  }
-  @media screen and (min-width: 1366px) {
-    .hero {
-      background-image: url(../images/hero/hero-bcgr-desktop.png);
-      padding-top: 50px;
-      padding-bottom: 20px;
-    }
-  }
-  // .hero__picture {
-  //   position: absolute;
-  //   top: -53px;
-  //   left: 610px;
-  // }
-  // .hero__container {
-  //   position: relative;
-  // }
 }
