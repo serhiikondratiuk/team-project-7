@@ -16,7 +16,7 @@
   &__logo {
     text-align: start;
   }
-  
+
   &__item {
     display: flex;
 
@@ -28,6 +28,13 @@
     display: flex;
     align-items: center;
     color: var(--third-background-color);
+
+    transition: color var(--transition-duration) var(--transition-timing-function);
+
+    &:hover,
+    &:focus {
+      color: var(--primary-accent-color);
+    }
   }
 
   &__instagram-wrapper {
@@ -36,6 +43,19 @@
     background-image: url('../images/footer/instagram.png');
     background-repeat: no-repeat;
     background-size: contain;
+    transform: scale(1);
+
+    &:hover {
+      animation-duration: 1500ms;
+      animation-iteration-count: infinite;
+    }
+
+    transition: transform var(--transition-duration) var(--transition-timing-function);
+
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+    }
   }
 
   &__copyright {
@@ -55,20 +75,20 @@
 }
 
 .footer__icon {
-    margin-right: 10px;
-    width: 20px;
-    height: 20px;
-    fill: var(--primary-accent-color);
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  fill: var(--primary-accent-color);
 
-    @media screen and (min-width: 768px) {
-      width: 24px;
-      height: 23px;
+  @media screen and (min-width: 768px) {
+    width: 24px;
+    height: 23px;
   }
 
-    @media screen and (min-width: 1366px) {
-      width: 30px;
-      height: 29px;
-    }
+  @media screen and (min-width: 1366px) {
+    width: 30px;
+    height: 29px;
+  }
 }
 
 // 0 - 767

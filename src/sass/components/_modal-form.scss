@@ -1,10 +1,8 @@
-
 .modal-order__form {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   padding: 40px;
-
 }
 
 .modal-order__title {
@@ -32,7 +30,7 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
-  transition: border-color 250ms var(--transition-timing-function);
+  transition: border-color var(--transition-duration) var(--transition-timing-function);
 
   &:focus {
     border-color: var(--primary-accent-color);
@@ -49,7 +47,7 @@
   padding: 0;
   margin: 0;
 
-  transition: fill 250ms var(--transition-timing-function);
+  transition: fill var(--transition-duration) var(--transition-timing-function);
 
   .modal-order__input:focus + &,
   .modal-order__input:hover + & {
@@ -76,7 +74,7 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
-  transition: border-color 250ms var(--transition-timing-function);
+  transition: border-color var(--transition-duration) var(--transition-timing-function);
 
   &:focus {
     border-color: var(--primary-accent-color);
@@ -90,17 +88,6 @@
 .modal-order__button {
   display: block;
   margin: 0 auto;
-  
-  width: 200px;
-  height: 50px;
 
   cursor: pointer;
-
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  color: var(--third-text-color);
-  background-color: var(--primary-accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
 }
