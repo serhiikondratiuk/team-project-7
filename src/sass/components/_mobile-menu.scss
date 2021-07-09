@@ -12,12 +12,18 @@
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+
+    transition: opacity var(--transition-duration) var(--transition-timing-function),
+      visibility var(--transition-duration) var(--transition-timing-function);
   }
 
   .mobile-menu.is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+
+    transition: opacity var(--transition-duration) var(--transition-timing-function),
+      visibility var(--transition-duration) var(--transition-timing-function);
   }
 
   .mobile-menu__container {
@@ -28,51 +34,96 @@
     @media screen and (min-width: 768px) and (max-width: 1365px) {
       padding-top: 40px;
       padding-bottom: 40px;
-   }
+    }
   }
 
   .mobile-menu__thumb {
- 
     display: block;
     justify-content: center;
 
-    animation: animateX100 2000ms var(--transition-timing-function);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateX(-100%);
+
+    .mobile-menu.is-open & {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transform: translateX(0%);
+
+      transition: opacity var(--transition-duration) var(--transition-timing-function)
+          var(--transition-duration),
+        visibility var(--transition-duration) var(--transition-timing-function)
+          var(--transition-duration),
+        transform var(--transition-duration) var(--transition-timing-function)
+          var(--transition-duration);
+    }
+
+    // animation: animateX100 2000ms var(--transition-timing-function) var(--transition-duration);
 
     @media screen and (min-width: 768px) {
       max-width: 332px;
       margin: 0 auto;
-  }
+    }
   }
 
   .mobile-menu__button {
     position: absolute;
     top: 37px;
     right: 27px;
+    z-index: 100;
 
     border: none;
     background-color: transparent;
     padding: 0;
     line-height: 0;
+    cursor: pointer;
 
-  @media screen and (min-width: 768px) {
-    top: 54px;
-    right: 47px;
-  }
+    @media screen and (min-width: 768px) {
+      top: 54px;
+      right: 47px;
+    }
   }
 
   .mobile-menu__icon {
     width: 21px;
     height: 21px;
     fill: #fff;
+
+    .mobile-menu__button:hover &,
+    .mobile-menu__button:focus & {
+      fill: var(--primary-accent-color);
+    }
   }
 
   .mobile-menu__logo {
-      margin-bottom: 50px;
+    margin-bottom: 50px;
 
-      @media screen and (min-width: 768px) {
-        margin-bottom: 72px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateX(100%);
+
+    .mobile-menu.is-open & {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transform: translateX(0%);
+
+      transition: opacity var(--transition-duration) var(--transition-timing-function)
+          var(--transition-duration),
+        visibility var(--transition-duration) var(--transition-timing-function)
+          var(--transition-duration),
+        transform var(--transition-duration) var(--transition-timing-function)
+          var(--transition-duration);
+    }
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 72px;
     }
   }
+
   .header__logo-up-mobile {
     display: flex;
     align-items: center;
@@ -86,7 +137,7 @@
 
     @media screen and (min-width: 768px) {
       font-size: 26px;
-  }
+    }
   }
 
   .header__logo-down-mobile {
@@ -99,11 +150,11 @@
 
     @media screen and (min-width: 768px) {
       font-size: 8px;
-  }
+    }
   }
 
   .mobile-menu__nav {
-      margin-bottom: 50px;
+    margin-bottom: 50px;
   }
 
   .mobile-menu__link {
@@ -120,7 +171,7 @@
     }
 
     @media screen and (min-width: 768px) {
-        font-size: 26px;
+      font-size: 26px;
     }
   }
 
@@ -129,7 +180,7 @@
     padding-top: 14px;
     padding-bottom: 14px;
     margin: 0 auto;
- 
+
     font-weight: bold;
     font-size: 14px;
     line-height: 1.2;
@@ -143,7 +194,7 @@
     @media screen and (min-width: 768px) {
       display: none;
     }
-    }
+  }
 }
 
 @media screen and (min-width: 1366px) {
@@ -157,9 +208,9 @@
     transform: translateX(-100%);
   }
 
-  50% {
-    transform: translateX(-50%);
-  }
+  // 50% {
+  //   transform: translateX(-50%);
+  // }
 
   100% {
     transform: translateX(0%);

@@ -3,7 +3,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms var(--transition-timing-function);
+
+  transition: transform var(--transition-duration) var(--transition-timing-function);
 
   width: 100%;
   max-width: 450px;
@@ -16,8 +17,8 @@
   background-color: var(--secondary-background-color);
 
   @media screen and (min-width: 1366px) {
-      width: 528px;
-      height: 581px;
+    width: 528px;
+    height: 581px;
   }
 }
 
@@ -39,7 +40,7 @@
   border-radius: 50%;
   background-color: transparent;
 
-  transition: fill 250ms var(--transition-timing-function);
+  transition: fill var(--transition-duration) var(--transition-timing-function);
 
   &:hover,
   &:focus {

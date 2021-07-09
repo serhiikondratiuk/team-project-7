@@ -9,16 +9,16 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   white-space: nowrap;
-
+  padding: 14px 12px;
   cursor: pointer;
 
-  padding: 14px 12px;
+  transition: color var(--transition-duration) var(--transition-timing-function),
+    background-color var(--transition-duration) var(--transition-timing-function);
 
-  &-invert {
+  &:hover,
+  &:focus {
     color: var(--primary-accent-color);
     background-color: transparent;
-
-    padding: 16px 18px;
   }
 }
 
@@ -27,10 +27,6 @@
   .btn {
     width: 260px;
     padding: 14px 0;
-
-    &-invert {
-      padding: 17px 35px 16px 36px;
-    }
   }
 }
 
@@ -38,10 +34,6 @@
 @media screen and (min-width: 768px) {
   .btn {
     padding: 17px 46px 16px 46px;
-
-    &-invert {
-      padding: 15px 5px 16px 5px;
-    }
   }
 }
 
@@ -53,10 +45,5 @@
 
     padding: 27px 70px 26px 70px;
     width: 354px;
-
-    &-invert {
-      padding: 27px 23px 26px 23px;
-      width: 336px;
-    }
   }
 }

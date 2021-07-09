@@ -2,7 +2,7 @@
   .header__consult-button,
   .header__nav {
     display: none;
-   } 
+  }
 }
 
 .header {
@@ -27,9 +27,7 @@
 }
 
 .header {
-    
   &__logo-up {
-
     display: flex;
     align-items: center;
     margin-bottom: 4px;
@@ -41,12 +39,11 @@
     color: var(--secondary-text-color);
 
     @media screen and (min-width: 768px) {
-        font-size: 26px;
+      font-size: 26px;
     }
   }
 
   &__logo-down {
-
     font-weight: bold;
     font-size: 5px;
     line-height: 1.2;
@@ -55,97 +52,100 @@
     color: var(--secondary-text-color);
 
     @media screen and (min-width: 768px) {
-        font-size: 8px;
+      font-size: 8px;
     }
   }
 
   &__logo-accent {
-      color: var(--primary-accent-color);
+    color: var(--primary-accent-color);
   }
 }
 
-    .logo__icon {
-        width: 14px;
-        height: 19px;
-        margin-right: 4px;
-        margin-left: 4px;
+.logo__icon {
+  width: 14px;
+  height: 19px;
+  margin-right: 4px;
+  margin-left: 4px;
 
-         @media screen and (min-width: 768px) {
-          width: 22px;
-          height: 30px;      
-      }
+  @media screen and (min-width: 768px) {
+    width: 22px;
+    height: 30px;
+  }
+}
+
+.header {
+  &__burger-button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+    cursor: pointer;
+  }
+
+  &__burger-icon {
+    width: 34px;
+    height: 34px;
+    fill: var(--secondary-text-color);
+
+    .header__burger-button:hover &,
+    .header__burger-button:focus & {
+      fill: var(--primary-accent-color);
     }
-
-  .header {
-      &__burger-button {
-        background-color: transparent;
-        border: none;
-        padding: 0;
-        line-height: 0;  
-      }
-
-      &__burger-icon {
-          width: 34px;
-          height: 34px;
-          fill: var(--secondary-text-color);
-      }
+  }
 }
 
 @media screen and (min-width: 768px) {
+  .header__buttons-wrapper {
+    display: flex;
+  }
 
-    .header__buttons-wrapper {
-        display: flex;
+  .header__consult-button {
+    display: block;
+    margin-right: 40px;
+    padding: 15px 5px;
+    cursor: pointer;
+
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+
+    color: var(--primary-accent-color);
+    background-color: transparent;
+    border: 2px solid var(--primary-accent-color);
+
+    transition: color var(--transition-duration) var(--transition-timing-function),
+      background-color var(--transition-duration) var(--transition-timing-function);
+
+    &:hover,
+    &:focus {
+      color: var(--primary-background-color);
+      background-color: var(--primary-accent-color);
     }
 
-    .header__consult-button {
-        display: block;
-        margin-right: 40px;
-        padding: 15px 5px;
-        cursor: pointer;
-
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 1.2;
-        letter-spacing: 0.14em;
-        text-transform: uppercase;
-
-        color: var(--primary-accent-color);
-        background-color: transparent;
-        border: 2px solid var(--primary-accent-color);
-
-        transition: color 250ms var(--transition-timing-function);
-        transition: border 250ms var(--transition-timing-function);
-
-        @media screen and (min-width: 1366px) {
-
-            margin-right: 0;
-            padding: 24px 26px;
-        }
+    @media screen and (min-width: 1366px) {
+      margin-right: 0;
+      padding: 24px 26px;
     }
-    .header__consult-button:hover,
-    .header__consult-button:focus {
-        color: #eb6208;
-        border: 2px solid #eb6208;
-    }
+  }
 }
 
 @media screen and (min-width: 1366px) {
+  .header__burger-button {
+    display: none;
+  }
 
-    .header__burger-button {
-        display: none;
-    }
+  .header__nav-list {
+    display: flex;
+    justify-content: space-between;
+  }
 
-    .header__nav-list {
-        display: flex;
-        justify-content: space-between;
-    }
+  .header__nav-item:not(:last-child) {
+    margin-right: 40px;
+  }
 
-    .header__nav-item:not(:last-child) {
-        margin-right: 40px;
-    }
-
-    .header__nav-link {
-
+  .header__nav-link {
     font-weight: bold;
     font-size: 14px;
     text-transform: uppercase;
@@ -157,30 +157,41 @@
     &:focus {
       color: var(--primary-accent-color);
     }
-}
+  }
 }
 // ====== прокрутка страницы наверх ======
 .up {
-    display: block;
-    position: fixed;
-    bottom: 20px;
-    right: 15px;
-    z-index: 40;
-    background-image: url('../images/svg/all-svg/fire.svg');
-    background-repeat: no-repeat;
-    background-size: 15px;
-    background-position-y: 37%;
-    border: 1px solid;
-    border-radius: 50%;
-    color: var(--primary-accent-color);
-    cursor: pointer;
-    padding: 15px;
-    font-size: 14px;
+  display: block;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 40;
+  background-image: url('../images/svg/all-svg/fire.svg');
+  background-repeat: no-repeat;
+  background-size: 14px;
+  background-position-x: 8%;
+  background-position-y: 45%;
+  border: 1px solid;
+  border-radius: 50%;
+  color: var(--primary-accent-color);
+  cursor: pointer;
+  padding: 16px 11px 16px 11px;
+  font-size: 16px;
 
-    @media screen and (min-width: 768px) {
- 
-      background-size: 20px;
-      padding: 19px;
-      font-size: 22px;
-    }
+  @media screen and (min-width: 768px) {
+    bottom: 25px;
+    right: 25px;
+    background-size: 18px;
+    background-position-y: 48%;
+    padding: 21px 13px 21px 13px;
+    font-size: 22px;
+  }
+
+  @media screen and (min-width: 1366px) {
+    bottom: 40px;
+    right: 50px;
+    background-size: 20px;
+    padding: 23px 14px 23px 14px;
+    font-size: 25px;
+  }
 }
